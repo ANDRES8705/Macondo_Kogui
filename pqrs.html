@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PQRS · Macondo Kogui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="burger" id="openMenu" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="Logo Macondo Kogui"><b>Macondo Kogui</b></a>
+    <nav class="main" aria-label="Principal">
+      <div><a href="index.html">Inicio</a></div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Nosotros <i class="chev"></i></button>
+        <div class="dd">
+          <a href="nosotros.html#mision">Misión</a><a href="nosotros.html#vision">Visión</a><a href="nosotros.html#eslogan">Eslogan</a><a href="nosotros.html#propuesta">Propuesta de valor</a><a href="nosotros.html#valores">Valores</a>
+        </div>
+      </div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Políticas y protocolos <i class="chev"></i></button>
+        <div class="dd">
+          <a href="politicas.html">Políticas</a><a href="politicas.html#principios">Principios</a><a href="politicas.html#protocolos">Protocolos de servicio</a><a href="politicas.html#tiempos">Tiempos de respuesta PQRS</a>
+        </div>
+      </div>
+      <div><a href="ubicacion.html">Ubicación</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menú lateral">
+  <button class="close" id="closeMenu" aria-label="Cerrar menú">×</button>
+  <h4>Menú</h4>
+  <a href="index.html#servicios">Nuestros postres</a>
+  <a href="index.html#domicilios">Domicilios</a>
+  <a href="#pqrs">PQRS</a>
+  <div class="only-mobile">
+    <h4>Secciones</h4>
+    <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="politicas.html">Políticas y protocolos</a><a href="ubicacion.html">Ubicación</a>
+  </div>
+  <h4>Entregables</h4>
+  <a href="entregables.html#cronograma">Cronograma</a>
+  <a href="entregables.html#procesos-th">Procesos de Talento Humano</a>
+  <div class="sub"><a href="entregables.html#th-convocatoria">Convocatoria</a><a href="entregables.html#th-preseleccion">Preselección</a><a href="entregables.html#th-seleccion">Selección</a></div>
+  <a href="entregables.html#glosario">Glosario TH</a>
+  <a href="entregables.html#organigrama">Organigrama</a>
+</aside>
+
+<main>
+<section style="border-top:0" id="pqrs">
+  <div class="wrap">
+    <h2>Radica tu PQRS</h2>
+    <p class="lead">Una petición, queja, reclamo, sugerencia o felicitación también hace parte de nuestra historia. ¡Gracias por contarnos!</p>
+    <form id="pqrsForm" novalidate>
+      <label>Tipo de solicitud
+        <select name="tipo" required>
+          <option value="">Selecciona…</option>
+          <option>Petición</option><option>Queja</option><option>Reclamo</option><option>Solicitud</option><option>Sugerencia</option><option>Felicitación</option>
+        </select>
+      </label>
+      <label>Nombre completo <input name="nombre" required placeholder="Tu nombre"></label>
+      <label>Correo electrónico <input name="correo" type="email" required placeholder="nombre@correo.com"></label>
+      <label>Teléfono (opcional) <input name="telefono" type="tel" placeholder="300 000 0000"></label>
+      <label class="full">Cuéntanos qué pasó <textarea name="detalle" required placeholder="Describe la situación, la fecha y el producto o servicio."></textarea></label>
+      <div class="full"><button class="btn" type="submit">Enviar PQRS</button></div>
+      <div class="ok" id="pqrsOk" role="status"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Macondo Kogui S.A.S.</b>
+    Donde las historias son dulces y eternas · La Candelaria, Bogotá<br>
+    <small>Alejandra Gutiérrez · Alison Quintero · Tatiana Méndez · Camila Báez · Ailyn Munive</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

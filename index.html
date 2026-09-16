@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio · Macondo Kogui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="burger" id="openMenu" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="#inicio"><img src="img/logo.png" alt="Logo Macondo Kogui"><b>Macondo Kogui</b></a>
+    <nav class="main" aria-label="Principal">
+      <div><a aria-current="page" href="#inicio">Inicio</a></div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Nosotros <i class="chev"></i></button>
+        <div class="dd">
+          <a href="nosotros.html#mision">Misión</a><a href="nosotros.html#vision">Visión</a><a href="nosotros.html#eslogan">Eslogan</a><a href="nosotros.html#propuesta">Propuesta de valor</a><a href="nosotros.html#valores">Valores</a>
+        </div>
+      </div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Políticas y protocolos <i class="chev"></i></button>
+        <div class="dd">
+          <a href="politicas.html">Políticas</a><a href="politicas.html#principios">Principios</a><a href="politicas.html#protocolos">Protocolos de servicio</a><a href="politicas.html#tiempos">Tiempos de respuesta PQRS</a>
+        </div>
+      </div>
+      <div><a href="ubicacion.html">Ubicación</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menú lateral">
+  <button class="close" id="closeMenu" aria-label="Cerrar menú">×</button>
+  <h4>Menú</h4>
+  <a href="#servicios">Nuestros postres</a>
+  <a href="#domicilios">Domicilios</a>
+  <a href="pqrs.html">PQRS</a>
+  <div class="only-mobile">
+    <h4>Secciones</h4>
+    <a href="#inicio">Inicio</a><a href="nosotros.html">Nosotros</a><a href="politicas.html">Políticas y protocolos</a><a href="ubicacion.html">Ubicación</a>
+  </div>
+  <h4>Entregables</h4>
+  <a href="entregables.html#cronograma">Cronograma</a>
+  <a href="entregables.html#procesos-th">Procesos de Talento Humano</a>
+  <div class="sub"><a href="entregables.html#th-convocatoria">Convocatoria</a><a href="entregables.html#th-preseleccion">Preselección</a><a href="entregables.html#th-seleccion">Selección</a></div>
+  <a href="entregables.html#glosario">Glosario TH</a>
+  <a href="entregables.html#organigrama">Organigrama</a>
+</aside>
+
+<main>
+<section id="inicio">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Donde las historias son <em>dulces y eternas</em></h1>
+        <p class="lead">Repostería de postres tradicionales colombianos. Cada postre lleva un dato curioso sobre Colombia, para que descubras un poquito del país en cada bocado.</p>
+        <p><a class="btn" href="#servicios">Ver nuestros postres</a> &nbsp; <a class="btn ghost" href="pqrs.html">Radicar una PQRS</a></p>
+      </div>
+      <img class="logo-big" src="img/logo.png" alt="Macondo Kogui — jaguar dormido sobre un postre de café">
+    </div>
+
+    <div class="gallery">
+      <figure><img src="img/postre-cafe.jpg" alt="Postre de café con granos de café"><figcaption>Postre de café</figcaption></figure>
+      <figure><img src="img/local.jpg" alt="Interior de la repostería"><figcaption>Nuestro punto en La Candelaria</figcaption></figure>
+      <figure><div class="ph">Lulo, maracuyá y café: sabores 100 % colombianos</div></figure>
+    </div>
+  </div>
+</section>
+<section id="video" style="border-top:0;padding-top:0">
+  <div class="wrap">
+    <div class="video">
+      <div>
+        <h2>Nuestro eslogan</h2>
+        <p>Un pedacito de la cultura colombiana en cada postre. Mira cómo nacen las historias que endulzan Macondo Kogui.</p>
+      </div>
+      <video controls poster="img/postre-cafe.jpg" preload="none">
+        <source src="video-eslogan.mp4" type="video/mp4">
+        Tu navegador no reproduce video HTML5.
+      </video>
+    </div>
+
+    <div class="cta">
+      <div>
+        <h3>¿Tienes una petición, queja, reclamo o solicitud?</h3>
+        <p class="lead">Tu opinión también hace parte de nuestra historia. Respondemos en máximo 10 días hábiles.</p>
+      </div>
+      <a class="btn" href="pqrs.html">Ingresa aquí</a>
+    </div>
+  </div>
+</section>
+<section id="servicios">
+  <div class="wrap">
+    <h2>Servicios destacados</h2>
+    <p class="lead">Lo que más nos piden nuestros clientes.</p>
+    <div class="three">
+      <div class="card">
+        <img src="img/postre-cafe.jpg" alt="Postre de café">
+        <div class="body"><h3>Postres tradicionales</h3><p>Recetas colombianas con lulo, maracuyá y café, preparadas con ingredientes frescos y 100 % nacionales.</p></div>
+      </div>
+      <div class="card" id="domicilios">
+        <div class="thumb" aria-hidden="true">🛵</div>
+        <div class="body"><h3>Domicilios</h3><p>Pide por WhatsApp o redes sociales y recibe tu postre en Bogotá, empacado con cuidado para que llegue perfecto.</p></div>
+      </div>
+      <div class="card">
+        <div class="thumb" aria-hidden="true">🎉</div>
+        <div class="body"><h3>Momentos especiales</h3><p>Postres para cumpleaños, reuniones familiares y celebraciones, con el dato curioso de Colombia que acompaña cada pedido.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Macondo Kogui S.A.S.</b>
+    Donde las historias son dulces y eternas · La Candelaria, Bogotá<br>
+    <small>Alejandra Gutiérrez · Alison Quintero · Tatiana Méndez · Camila Báez · Ailyn Munive</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
