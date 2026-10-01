@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menú · Macondo Kogui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="burger" id="openMenu" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="Logo Macondo Kogui"><b>Macondo Kogui</b></a>
+    <nav class="main" aria-label="Principal">
+      <div><a href="index.html">Inicio</a></div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Nosotros <i class="chev"></i></button>
+        <div class="dd">
+          <a href="nosotros.html#mision">Misión</a><a href="nosotros.html#vision">Visión</a><a href="nosotros.html#eslogan">Eslogan</a><a href="nosotros.html#propuesta">Propuesta de valor</a><a href="nosotros.html#valores">Valores</a><a href="nosotros.html#triangulo">Triángulo de servicio</a>
+        </div>
+      </div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Políticas y protocolos <i class="chev"></i></button>
+        <div class="dd">
+          <a href="politicas.html">Políticas</a><a href="politicas.html#principios">Principios</a><a href="politicas.html#protocolos">Protocolos de servicio</a><a href="politicas.html#tiempos">Tiempos de respuesta PQRS</a>
+        </div>
+      </div>
+      <div><a href="ubicacion.html">Ubicación</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menú lateral">
+  <button class="close" id="closeMenu" aria-label="Cerrar menú">×</button>
+  <h4>Menú</h4>
+  <a aria-current="page" href="#menu">Nuestros postres</a>
+  <a href="empresa.html">Información de la empresa</a>
+  <a href="pqrs.html">PQRS</a>
+  <div class="only-mobile">
+    <h4>Secciones</h4>
+    <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="politicas.html">Políticas y protocolos</a><a href="ubicacion.html">Ubicación</a>
+  </div>
+  <h4>Entregables</h4>
+  <a href="entregables.html#cronograma">Cronograma</a>
+  <a href="talento-humano.html">Apoyo a Talento Humano</a>
+  <a href="servicio-cliente.html">Servicio al cliente</a>
+  <a href="herramientas.html">Operar herramientas</a>
+  <a href="entregables.html#glosario">Glosario TH</a>
+  <a href="entregables.html#organigrama">Organigrama</a>
+</aside>
+
+<main>
+<section style="border-top:0" id="menu">
+  <div class="wrap">
+    <h2>Nuestro menú</h2>
+    <p class="lead">Postres con lulo, maracuyá y café, y bebidas para acompañarlos.</p>
+    <div class="menu-grid">
+      <figure class="menu-video">
+        <video src="video/menu.mp4" poster="img/menu-portada.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Video del menú de Macondo Kogui: postres y bebidas"></video>
+      </figure>
+      <div class="menu-list">
+        <h3>Postres Macondo</h3>
+        <ul>
+          <li>Mousse de lulo</li><li>Mousse de maracuyá</li><li>Mousse de frutos rojos</li>
+          <li>Mousse de café</li><li>Tiramisú de café</li><li>Cheesecake de limón</li>
+          <li>Cheesecake de fresa</li><li>Torta de chocolate</li><li>Torta tres leches</li>
+        </ul>
+        <h3>Postres de la casa</h3>
+        <ul><li>Postre de café</li><li>Postre de lulo</li><li>Postre de maracuyá</li></ul>
+        <h3>Bebidas</h3>
+        <ul>
+          <li>Café</li><li>Café helado</li><li>Limonada</li><li>Limonada de coco</li>
+          <li>Cerezada</li><li>Mango biche</li><li>Jugo de fresa</li><li>Jugo de guanábana</li>
+          <li>Jugo de mora</li><li>Malteadas</li>
+        </ul>
+        <p><button class="btn" type="button" data-open-chat>¿Tienes preguntas? Escríbenos</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Macondo Kogui S.A.S.</b>
+    Donde las historias son dulces y eternas · La Candelaria, Bogotá<br>
+    <small>Alejandra Gutiérrez · Alison Quintero · Tatiana Méndez · Camila Báez · Ailyn Munive</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

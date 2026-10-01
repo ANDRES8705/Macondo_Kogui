@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apoyo a Talento Humano · Macondo Kogui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="burger" id="openMenu" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="Logo Macondo Kogui"><b>Macondo Kogui</b></a>
+    <nav class="main" aria-label="Principal">
+      <div><a href="index.html">Inicio</a></div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Nosotros <i class="chev"></i></button>
+        <div class="dd">
+          <a href="nosotros.html#mision">Misión</a><a href="nosotros.html#vision">Visión</a><a href="nosotros.html#eslogan">Eslogan</a><a href="nosotros.html#propuesta">Propuesta de valor</a><a href="nosotros.html#valores">Valores</a><a href="nosotros.html#triangulo">Triángulo de servicio</a>
+        </div>
+      </div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Políticas y protocolos <i class="chev"></i></button>
+        <div class="dd">
+          <a href="politicas.html">Políticas</a><a href="politicas.html#principios">Principios</a><a href="politicas.html#protocolos">Protocolos de servicio</a><a href="politicas.html#tiempos">Tiempos de respuesta PQRS</a>
+        </div>
+      </div>
+      <div><a href="ubicacion.html">Ubicación</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menú lateral">
+  <button class="close" id="closeMenu" aria-label="Cerrar menú">×</button>
+  <h4>Menú</h4>
+  <a href="menu.html">Nuestros postres</a>
+  <a href="empresa.html">Información de la empresa</a>
+  <a href="pqrs.html">PQRS</a>
+  <div class="only-mobile">
+    <h4>Secciones</h4>
+    <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="politicas.html">Políticas y protocolos</a><a href="ubicacion.html">Ubicación</a>
+  </div>
+  <h4>Entregables</h4>
+  <a href="entregables.html#cronograma">Cronograma</a>
+  <a aria-current="page" href="#talento">Apoyo a Talento Humano</a>
+  <a href="servicio-cliente.html">Servicio al cliente</a>
+  <a href="herramientas.html">Operar herramientas</a>
+  <a href="entregables.html#glosario">Glosario TH</a>
+  <a href="entregables.html#organigrama">Organigrama</a>
+</aside>
+
+<main>
+<section style="border-top:0" id="talento">
+  <div class="wrap">
+    <h2>Apoyo a Talento Humano</h2>
+    <p class="lead">Los documentos del proceso de talento humano de Macondo Kogui, en orden: del protocolo de servicio y la presentación de la empresa al reclutamiento, la selección, la vinculación, la inducción, la evaluación y la capacitación.</p>
+    <div class="th-grid">
+      <ol class="docs" aria-label="Documentos de talento humano">
+        <li><button type="button" class="doc" data-doc="1" id="doc-1" aria-controls="visor">
+          <img src="img/th/1-macondo-kogui.jpg" alt="" loading="lazy">
+          <span class="doc-num">1</span>
+          <span class="doc-txt"><b>Protocolo de servicio al cliente</b><small>Cultura de servicio, servicio inclusivo, procedimiento, PQRS y clientes difíciles.</small><em>28 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="2" id="doc-2" aria-controls="visor">
+          <img src="img/th/2-presentacion-macondo-kogui.jpg" alt="" loading="lazy">
+          <span class="doc-num">2</span>
+          <span class="doc-txt"><b>Presentación Macondo Kogui</b><small>Misión, visión, valores, políticas, estructura orgánica y organigrama.</small><em>19 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="3" id="doc-3" aria-controls="visor">
+          <img src="img/th/3-reclutamiento.jpg" alt="" loading="lazy">
+          <span class="doc-num">3</span>
+          <span class="doc-txt"><b>Reclutamiento</b><small>Expedición 2: concepto, tipos y fases de reclutamiento, y documentos clave.</small><em>7 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="4" id="doc-4" aria-controls="visor">
+          <img src="img/th/4-seleccion.jpg" alt="" loading="lazy">
+          <span class="doc-num">4</span>
+          <span class="doc-txt"><b>Selección</b><small>Expedición 3: concepto, tipos de selección y fase de evaluación.</small><em>8 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="5" id="doc-5" aria-controls="visor">
+          <img src="img/th/5-vinculacion.jpg" alt="" loading="lazy">
+          <span class="doc-num">5</span>
+          <span class="doc-txt"><b>Vinculación</b><small>Expedición 4: concepto, objetivos y ventajas de vincular al talento humano.</small><em>27 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="6" id="doc-6" aria-controls="visor">
+          <img src="img/th/6-induccion.jpg" alt="" loading="lazy">
+          <span class="doc-num">6</span>
+          <span class="doc-txt"><b>Inducción</b><small>Expedición 5: concepto, objetivos y ventajas de la inducción.</small><em>15 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="7" id="doc-7" aria-controls="visor">
+          <img src="img/th/7-evaluacion.jpg" alt="" loading="lazy">
+          <span class="doc-num">7</span>
+          <span class="doc-txt"><b>Evaluación del desempeño</b><small>Expedición 6: fortalezas, oportunidades de mejora y necesidades del trabajador.</small><em>11 páginas · PDF</em></span>
+        </button></li>
+        <li><button type="button" class="doc" data-doc="8" id="doc-8" aria-controls="visor">
+          <img src="img/th/8-capacitacion.jpg" alt="" loading="lazy">
+          <span class="doc-num">8</span>
+          <span class="doc-txt"><b>Capacitación</b><small>Concepto, objetivos y ventajas de la capacitación y formación del personal.</small><em>12 páginas · PDF</em></span>
+        </button></li>
+      </ol>
+      <div class="visor" id="visor" aria-live="polite">
+        <div class="visor-bar">
+          <h3 id="visorTitulo">Selecciona un documento</h3>
+          <div class="visor-acc">
+            <a class="btn ghost" id="visorAbrir" href="#" target="_blank" rel="noopener">Abrir PDF</a>
+            <a class="btn" id="visorBajar" href="#" download>Descargar</a>
+          </div>
+        </div>
+        <div class="visor-lienzo" id="visorLienzo"><p class="visor-msg">Elige uno de los documentos de la lista para verlo aquí.</p></div>
+        <div class="visor-nav">
+          <button type="button" class="btn ghost" id="visorPrev" disabled>Anterior</button>
+          <span id="visorPag">—</span>
+          <button type="button" class="btn ghost" id="visorNext" disabled>Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Macondo Kogui S.A.S.</b>
+    Donde las historias son dulces y eternas · La Candelaria, Bogotá<br>
+    <small>Alejandra Gutiérrez · Alison Quintero · Tatiana Méndez · Camila Báez · Ailyn Munive</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>window.DOCS_TH=[{f:"docs/1-macondo-kogui.pdf",t:"1. Protocolo de servicio al cliente"},{f:"docs/2-presentacion-macondo-kogui.pdf",t:"2. Presentación Macondo Kogui"},{f:"docs/3-reclutamiento.pdf",t:"3. Reclutamiento"},{f:"docs/4-seleccion.pdf",t:"4. Selección"},{f:"docs/5-vinculacion.pdf",t:"5. Vinculación"},{f:"docs/6-induccion.pdf",t:"6. Inducción"},{f:"docs/7-evaluacion.pdf",t:"7. Evaluación del desempeño"},{f:"docs/8-capacitacion.pdf",t:"8. Capacitación"}];</script>
+<script src="js/visor.js"></script>
+</body>
+</html>

@@ -38,7 +38,7 @@
   .burger span{display:block;width:24px;height:2px;background:var(--umber);margin:3px 0;transition:.25s}
   .burger:hover{background:var(--sand)} .burger:hover span{background:#3A2C22}
   .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink)}
-  .brand img{width:48px;height:48px;object-fit:contain}
+  .brand img{width:52px;height:52px;object-fit:cover;border-radius:50%;box-shadow:0 0 0 2px var(--sand)}
   .brand b{font-family:Fraunces,serif;font-weight:700;font-size:1.35rem;letter-spacing:.01em}
   nav.main{margin-left:auto;display:flex;gap:.25rem}
   nav.main>div{position:relative}
@@ -67,12 +67,11 @@
   #inicio{padding:3.5rem 0 4rem;border-top:0}
   .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
   .hero h1 em{font-style:italic;font-weight:400;color:var(--terracota)}
-  .hero .logo-big{width:min(380px,80%);margin:0 auto;filter:drop-shadow(0 18px 30px rgba(58,44,34,.18))}
   .btn{display:inline-block;background:var(--terracota);color:#fff;text-decoration:none;font-weight:600;padding:.85rem 1.4rem;border-radius:999px;border:0;cursor:pointer;font:inherit;font-weight:600}
   .btn:hover{background:var(--umber)}
-  .btn.ghost{background:none;color:var(--umber);border:2px solid var(--taupe)}
+  .btn.ghost{background:none;color:var(--ink);border:2px solid var(--taupe)}
   .btn.ghost:hover{background:var(--sand);color:#3A2C22}
-  @media (max-width:800px){.hero{grid-template-columns:1fr}.hero .logo-big{order:-1;width:60%}}
+  @media (max-width:800px){.hero{grid-template-columns:1fr}}
 
   .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;margin-top:3rem;height:340px}
   .gallery figure{margin:0;border-radius:18px;overflow:hidden;position:relative;background:var(--sand)}
@@ -165,3 +164,71 @@
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 nav.main a[aria-current="page"]{color:var(--terracota);border-bottom:2px solid var(--terracota);border-radius:0}
+.hero-solo{grid-template-columns:1fr;max-width:760px}
+/* ---------- menú ---------- */
+.menu-grid{display:grid;grid-template-columns:minmax(260px,400px) 1fr;gap:3rem;align-items:start;margin-top:1.5rem}
+.menu-video{margin:0;position:sticky;top:96px}
+.menu-video video{display:block;width:100%;aspect-ratio:792/1122;object-fit:cover;border-radius:22px;background:var(--sand);box-shadow:0 18px 40px rgba(58,44,34,.25)}
+.menu-list h3{color:var(--terracota);margin-top:1.6rem}
+.menu-list h3:first-child{margin-top:0}
+.menu-list ul{list-style:none;padding:0;margin:0 0 .5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.2rem 1.5rem}
+.menu-list li{padding:.45rem 0;border-bottom:1px dotted var(--line)}
+.drawer a[aria-current="page"]{background:var(--sand);color:#3A2C22}
+@media (max-width:800px){.menu-grid{grid-template-columns:1fr}.menu-video{position:static;width:min(340px,90%);margin:0 auto}}
+/* ---------- empresa ---------- */
+.ficha{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:2rem}
+.ficha div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+.ficha dt{font-size:.85rem;color:var(--ink-soft);font-weight:600}
+.ficha dd{margin:.2rem 0 0;font-family:Fraunces,serif;font-size:1.15rem}
+/* ---------- chatbot ---------- */
+.chat-fab{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:.5rem;background:var(--terracota);color:#fff;border:0;border-radius:999px;padding:.8rem 1.2rem;font:inherit;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(58,44,34,.35)}
+.chat-fab:hover{background:var(--umber)}
+.chat-fab.off{display:none}
+.chat{padding:0;border-top:1px solid var(--line);position:fixed;right:20px;bottom:20px;z-index:85;width:min(370px,calc(100vw - 32px));height:min(540px,calc(100vh - 110px));background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 50px rgba(40,28,20,.35);display:flex;flex-direction:column;overflow:hidden}
+.chat[hidden]{display:none}
+.chat-head{position:static;border:0;z-index:auto;display:flex;align-items:center;gap:.7rem;padding:.8rem 1rem;background:var(--umber);color:#fff}
+.chat-head img{width:40px;height:40px;border-radius:50%}
+.chat-head b{font-family:Fraunces,serif;font-size:1.1rem;display:block}
+.chat-head small{color:#E9DCC5}
+.chat-x{margin-left:auto;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer;line-height:1}
+.chat-log{flex:1;overflow:auto;padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.chat-log .m{max-width:85%;padding:.6rem .85rem;border-radius:14px;font-size:.95rem;line-height:1.45}
+.chat-log .bot{background:var(--bg);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-log .yo{background:var(--terracota);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chat-chips{display:flex;flex-wrap:wrap;gap:.4rem;padding:.2rem 1rem .6rem}
+.chat-chips button{font:inherit;font-size:.85rem;border:1px solid var(--taupe);background:none;color:var(--ink);border-radius:999px;padding:.3rem .75rem;cursor:pointer}
+.chat-chips button:hover{background:var(--sand);color:#3A2C22}
+.chat .chat-form{display:flex;grid-template-columns:none;gap:.5rem;padding:.7rem;border:0;border-top:1px solid var(--line);border-radius:0;background:none}
+.chat-form input{flex:1;min-width:0}
+.chat-form .btn{padding:.6rem 1rem}
+@media (max-width:640px){.chat-fab b{display:none}.chat-fab{padding:.9rem}}
+/* ---------- apoyo a talento humano ---------- */
+.th-grid{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:2rem;align-items:start;margin-top:1.5rem}
+.docs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem;position:sticky;top:96px;max-height:calc(100vh - 120px);overflow:auto;padding-right:.3rem}
+.doc{width:100%;display:grid;grid-template-columns:72px auto 1fr;gap:.8rem;align-items:center;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem;cursor:pointer}
+.doc:hover{border-color:var(--clay)}
+.doc.activo{border-color:var(--terracota);box-shadow:inset 4px 0 0 var(--terracota)}
+.doc img{width:72px;height:50px;object-fit:cover;border-radius:8px;background:var(--sand)}
+.doc-num{min-width:30px;height:30px;padding:0 .35rem;border-radius:999px;font-size:.9rem;display:grid;place-items:center;background:var(--olive);color:#fff;font-family:Fraunces,serif;font-weight:700}
+.doc.activo .doc-num{background:var(--terracota)}
+.doc-txt b{display:block;font-size:1rem}
+.doc-txt small{display:block;color:var(--ink-soft);font-size:.85rem;line-height:1.35}
+.doc-txt em{display:block;font-style:normal;font-size:.78rem;color:var(--ink-soft);margin-top:.2rem}
+.visor{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1rem;scroll-margin-top:90px}
+.visor-bar{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;justify-content:space-between;margin-bottom:.8rem}
+.visor-bar h3{margin:0;color:var(--terracota)}
+.visor-acc{display:flex;gap:.5rem}
+.visor-acc .btn{padding:.55rem 1rem;font-size:.95rem}
+.visor-lienzo{background:var(--bg);border-radius:12px;min-height:320px;display:grid;place-items:center;overflow:hidden}
+.visor-lienzo canvas{display:block;border-radius:8px}
+.visor-lienzo iframe{width:100%;height:70vh;border:0}
+.visor-msg{color:var(--ink-soft);padding:2rem;text-align:center}
+.visor-nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:.8rem}
+.visor-nav .btn{padding:.5rem 1.1rem}
+.visor-nav .btn:disabled{opacity:.4;cursor:default}
+@media (max-width:900px){.th-grid{grid-template-columns:1fr}.docs{position:static;max-height:none;overflow:visible}}
+.doc.sin-num{grid-template-columns:72px 1fr}
+.triangulo{margin-top:3rem}
+.triangulo img{width:min(720px,100%);height:auto;border-radius:18px;box-shadow:0 14px 34px rgba(58,44,34,.18);margin-top:.5rem}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) h3{color:#E2CDB4}:root:not([data-theme="light"]) .values h3,:root:not([data-theme="light"]) .org h3{color:#fff}:root:not([data-theme="light"]) .menu-list h3,:root:not([data-theme="light"]) .visor-bar h3{color:var(--terracota)}}
+:root[data-theme="dark"] h3{color:#E2CDB4}:root[data-theme="dark"] .values h3{color:#fff}:root[data-theme="dark"] .menu-list h3,:root[data-theme="dark"] .visor-bar h3{color:var(--terracota)}
