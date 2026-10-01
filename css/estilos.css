@@ -116,7 +116,7 @@
   .proto p{font-size:.97rem;margin:0}
   table{width:100%;border-collapse:collapse;margin-top:1rem;background:var(--surface);border-radius:12px;overflow:hidden}
   th,td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:var(--sand);color:var(--ink);font-family:Fraunces,serif}
+  th{background:var(--sand);color:#3A2C22;font-family:Fraunces,serif}
   :root[data-theme="dark"] th{color:#2A211B}
   .scroll{overflow-x:auto}
 
@@ -232,3 +232,16 @@ nav.main a[aria-current="page"]{color:var(--terracota);border-bottom:2px solid v
 .triangulo img{width:min(720px,100%);height:auto;border-radius:18px;box-shadow:0 14px 34px rgba(58,44,34,.18);margin-top:.5rem}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) h3{color:#E2CDB4}:root:not([data-theme="light"]) .values h3,:root:not([data-theme="light"]) .org h3{color:#fff}:root:not([data-theme="light"]) .menu-list h3,:root:not([data-theme="light"]) .visor-bar h3{color:var(--terracota)}}
 :root[data-theme="dark"] h3{color:#E2CDB4}:root[data-theme="dark"] .values h3{color:#fff}:root[data-theme="dark"] .menu-list h3,:root[data-theme="dark"] .visor-bar h3{color:var(--terracota)}
+/* ---------- políticas ---------- */
+.sub-h{color:var(--terracota);font-size:1.4rem;margin-top:2.5rem}
+#politicas h4,#principios h4,#tiempos h4{font-family:Fraunces,serif;font-size:1.15rem;margin:0 0 .5rem}
+ul.pol{padding-left:1.2rem;margin:0}
+ul.pol li{margin-bottom:.5rem}
+.nota{margin-top:1.5rem;padding:1rem 1.2rem;border-left:4px solid var(--olive);background:var(--surface);border-radius:0 12px 12px 0;max-width:none}
+.fuentes{margin-top:2.5rem;font-size:.92rem;color:var(--ink-soft)}
+.fuentes summary{cursor:pointer;font-weight:600;color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sub-h{color:var(--clay)}}
+:root[data-theme="dark"] .sub-h{color:var(--clay)}
+.fachada{margin:1rem 0 2.5rem}
+.fachada img{width:100%;height:auto;aspect-ratio:2752/1536;object-fit:cover;border-radius:20px;background:var(--sand);box-shadow:0 18px 40px rgba(58,44,34,.22)}
+.fachada figcaption{margin-top:.6rem;font-size:.92rem;color:var(--ink-soft)}

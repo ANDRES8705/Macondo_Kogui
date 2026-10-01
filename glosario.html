@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glosario TH · Macondo Kogui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700,100&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="burger" id="openMenu" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a class="brand" href="index.html"><img src="img/logo.png" alt="Logo Macondo Kogui"><b>Macondo Kogui</b></a>
+    <nav class="main" aria-label="Principal">
+      <div><a href="index.html">Inicio</a></div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Nosotros <i class="chev"></i></button>
+        <div class="dd">
+          <a href="nosotros.html#mision">Misión</a><a href="nosotros.html#vision">Visión</a><a href="nosotros.html#eslogan">Eslogan</a><a href="nosotros.html#propuesta">Propuesta de valor</a><a href="nosotros.html#valores">Valores</a><a href="nosotros.html#triangulo">Triángulo de servicio</a>
+        </div>
+      </div>
+      <div>
+        <button aria-haspopup="true" aria-expanded="false">Políticas y protocolos <i class="chev"></i></button>
+        <div class="dd">
+          <a href="politicas.html">Políticas</a><a href="politicas.html#principios">Principios</a><a href="politicas.html#protocolos">Protocolos de servicio</a><a href="politicas.html#tiempos">Tiempos de respuesta PQRS</a>
+        </div>
+      </div>
+      <div><a href="ubicacion.html">Ubicación</a></div>
+    </nav>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Menú lateral">
+  <button class="close" id="closeMenu" aria-label="Cerrar menú">×</button>
+  <h4>Menú</h4>
+  <a href="menu.html">Nuestros postres</a>
+  <a href="empresa.html">Información de la empresa</a>
+  <a href="pqrs.html">PQRS</a>
+  <div class="only-mobile">
+    <h4>Secciones</h4>
+    <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="politicas.html">Políticas y protocolos</a><a href="ubicacion.html">Ubicación</a>
+  </div>
+  <h4>Entregables</h4>
+  <a href="entregables.html#cronograma">Cronograma</a>
+  <a href="talento-humano.html">Apoyo a Talento Humano</a>
+  <a href="servicio-cliente.html">Servicio al cliente</a>
+  <a href="herramientas.html">Operar herramientas</a>
+  <a aria-current="page" href="#glosario">Glosario TH</a>
+  <a href="entregables.html#organigrama">Organigrama</a>
+</aside>
+
+<main>
+<section style="border-top:0" id="glosario">
+  <div class="wrap">
+    <h2>Glosario de Talento Humano</h2>
+    <p class="lead">Bienvenidos a Glosarix, el planeta donde se explora el conocimiento y crecen los emprendedores. Recorre los conceptos de talento humano de la mano de Aslanax, nuestro guía galáctico.</p>
+    <div class="th-grid">
+      <ul class="docs" aria-label="Glosario de talento humano">
+        <li><button type="button" class="doc sin-num" data-doc="1" id="gl-1" aria-controls="visor">
+          <img src="img/th/glosarix.jpg" alt="" loading="lazy">
+          <span class="doc-txt"><b>Glosarix: Ciudad de la Comunicación</b><small>Glosario de talento humano guiado por Aslanax, el gato galáctico: un universo de comunicación, conocimiento y emprendimiento.</small><em>16 páginas · PDF</em></span>
+        </button></li>
+      </ul>
+      <div class="visor" id="visor" aria-live="polite">
+        <div class="visor-bar">
+          <h3 id="visorTitulo">Selecciona un documento</h3>
+          <div class="visor-acc">
+            <a class="btn ghost" id="visorAbrir" href="#" target="_blank" rel="noopener">Abrir PDF</a>
+            <a class="btn" id="visorBajar" href="#" download>Descargar</a>
+          </div>
+        </div>
+        <div class="visor-lienzo" id="visorLienzo"><p class="visor-msg">Elige uno de los documentos de la lista para verlo aquí.</p></div>
+        <div class="visor-nav">
+          <button type="button" class="btn ghost" id="visorPrev" disabled>Anterior</button>
+          <span id="visorPag">—</span>
+          <button type="button" class="btn ghost" id="visorNext" disabled>Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Macondo Kogui S.A.S.</b>
+    Donde las historias son dulces y eternas · La Candelaria, Bogotá<br>
+    <small>Alejandra Gutiérrez · Alison Quintero · Tatiana Méndez · Camila Báez · Ailyn Munive</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>window.DOCS_TH=[{"f": "docs/Presentación Glosarix Ciudad de la Comunicación.pdf", "t": "Glosarix: Ciudad de la Comunicación"}];window.DOCS_PREF="gl-";</script>
+<script src="js/visor.js"></script>
+</body>
+</html>
